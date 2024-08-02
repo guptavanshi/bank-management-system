@@ -1,0 +1,28 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 40256 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#
+#  
+Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.4597)
+Time: Fri Jul 19 02:22:20 2024 India Standard Time elapsed time: 6070.281361 seconds (0d 1h 41m 10s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000026151f04590):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=15252, stack(0x000000a2a6d00000,0x000000a2a6e00000) (1024K)]
+
+
+Current CompileTask:
+C2:6070281 1121       4       java.util.HashMap::keysToArray (81 bytes)
+
+Stack: [0x000000a2a6d00000,0x000000a2a6e00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6cade9]
